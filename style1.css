@@ -1,0 +1,103 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #ADADAD;
+}
+
+header{
+    background-color: #333333;
+    display: flex;
+    padding: 20px;
+    margin: 10px;
+}
+
+nav{
+    display: flex;
+    list-style: none;
+    width: 90%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+li a{
+    text-decoration: none;
+    color: #65C1F2;
+}
+
+#logo{
+    height: 75px;
+    margin-left: 20px;
+}
+
+h1{
+    color: #333333;
+    text-align: center;
+}
+
+main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+}
+
+main div p{
+    background-color: #FAFAFA;
+    border: thick double #4EBFE7;
+    padding: 15px;
+}
+
+
+#presentation{
+    grid-column: 1/span 2;
+}
+
+#images img{
+    width: 100%;
+    border: thick double #4EBFE7;
+    background-color: #FAFAFA;
+}
+
+
+
+.imgReseaux{
+    height: 3em;
+    width: 3em;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #ADADAD;
+    margin-top: 20px;
+} 
+
+@media screen and  (max-width: 600px), (max-device-width: 600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo{
+        margin-bottom: 10px;
+    }
+
+    main{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #exemples{
+        order: 3;
+    }
+}
