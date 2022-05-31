@@ -35,7 +35,8 @@ li a{
 
 h1{
     color: #333333;
-    text-align: center;
+    grid-row: 1;
+    grid-column: 1 /span 2;
 }
 
 main{
