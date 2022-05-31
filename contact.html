@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="index.html"><img id="logo" src="./img/logo.png" alt="logo"></a>
+        </div>
+        <nav>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="javascript.html">Javascript</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </nav>
+    </header>
+    <form action="contact.php" method="post">
+        <h2>
+            Contactez-nous
+        </h2>
+        <fieldset>
+            <legend>Formulaire</legend>
+            <div>
+                <label for="lastname">Nom*</label>
+                <input type="text" 
+                required
+                name="lastname"
+                id="lastname"
+                placeholder= "EX. Dupont"
+                maxlength="25">
+            </div>
+            <div>
+                <Label for="firstname">Prénom* :</Label>
+                <input type="text" name="firstname" id="firstname" 
+                placeholder="Ex : Patrick" 
+                maxlength="20" 
+                required>
+            </div>
+            <div>
+                <Label for="file">Envoyer votre CV :</Label>
+                <input type="file" name="file" id="file" 
+                accept=".png, .jpeg, .pdf"
+                multiple>
+            </div>
+            <div>
+                <Label for="email">E-mail* :</Label>
+                <input type="email" name="email" id="email" 
+                placeholder=" Ex : patdupont@gmail.com"
+                required> 
+            </div>
+            <div>
+                <Label for="phone">Téléphone :</Label>
+                <input type="tel" name="phone" id="phone" 
+                placeholder="Ex: 0605040302" 
+                maxlength="12">
+            </div>
+            <div>
+                <Label for="commentaires">Message :</Label>
+                <br>
+                <textarea name="commentaires" id="commentaires" cols="70" rows="10" 
+                placeholder="commentaires"></textarea>
+            </div>
+            <div class="btn">
+            <input type="reset" value="reset">
+            <input type="submit" value="envoyer">
+            </div>
+        </fieldset>
+        <fieldset class="adresses" >
+            <div class="ligne">
+                <div class="contactAdresse">
+                    <h4>Adrar Formation (siège)</h4>
+                    <p>
+                        2 Rue Irène Joliot Curie
+                        <br>
+                        Parc Technologique du Canal
+                        <br>
+                        31 520 Ramonville Saint Agne
+                        <br>Tél. : 05 62 19 20 80
+                    </p>
+                    <a href="mailto:adrarinfo@adrar-formation.com">adrarinfo@adrar-formation.com</a>
+                </div>
+            </div>
+            <div class="ligne">
+                <div class="contactAdresse">
+                    <h4>ADRAR Pôle Numérique</h4>
+                    <p>11 avenue de l'Europe
+                        <br>31520 Ramonville Saint Agne
+                        <br>Tél: 05 34 31 38 10
+                    </p>
+                    <a href="mailto:polenumerique@adrar-formation.com">polenumerique@adrar-formation.com
+                    </a>
+                </div>
+    <footer>
+        <h3>Suivez-nous sur les réseaux sociaux</h3>
+        <nav>
+            <a href="https://www.linkedin.com/company/adrar-formation" target="_blank">
+                <img class="imgReseaux" src="./img/logoLinkedIn.png" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/ADRARformation/" target="_blank">
+                <img class="imgReseaux" src="./img/logoFB.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com/adrarformation" target="_blank">
+                <img class="imgReseaux" src="./img/twitter-logo.jpg" alt="twitter">
+            </a>
+        </nav>
+    </footer>
+</body>
+</html>
