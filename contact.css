@@ -121,12 +121,7 @@ fieldset{
 }
 .adresses{
     display: flex;
-    flex-direction: column;
     justify-items: center;
-}
-
-.ligne{
-    display: flex;
 }
 
 .contactAdresse{
@@ -136,4 +131,3 @@ fieldset{
     height: 15em;
     width: 20em;
 }
-
